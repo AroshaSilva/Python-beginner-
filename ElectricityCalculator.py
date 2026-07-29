@@ -9,14 +9,13 @@ width = 20
 centered_text = text.center(width)
 print(centered_text)
 
-#Gets units
-PrevU=float(input("Enter the previous Units    : ")) 
+#Gets units 
+#1.PrevU = Total no.of units consumed upto last month.
+#2. NewU = Total no.of units consumed upto this/current month.
+PrevU=float(input("Enter the previous Month Units    : ")) 
 NewU=float(input("Enter the current month Units: "))
 
-#Fix_charges=input("Do You need the Total payment to be displayed including Fixed charges? (Y/N)")
-
-
-#Gets no of CONSUMED units (this month)
+#Gets no of CONSUMED units (this month) ConUn = Difference of units consumed.
 ConUn = NewU-PrevU
 CR=0
 if ConUn< 0 :
@@ -160,8 +159,10 @@ print("--------------")
 print(f"Total payment: LKR {Totfinaltotal:.2f}")
 print("-----------------------------------------------------------")
 
-print("This simple program is created using 'Python' by 'Chaveen Arosha - 2024 SURDS'\
+print("This simple program is created using 'Python' by 'Arosha Silva - 2024 SURDS (ICT-A/L)'\
         Prices used to calculate are of 2023 existing tariffヾ≧▽≦*o " )  
 #Please do not edit any . There were no error(s) encountered while testing nor the time saved and finished
+
 #https://www.pucsl.gov.lk/wp-content/uploads/2023/10/20-OCT-2023-CEB.pdf
   
+#                            *****
